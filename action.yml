@@ -1,0 +1,16 @@
+name: 'Slack Notifier'
+description: 'Sends a slack message'
+author: 'ssethu24'
+inputs:
+  message:
+    required: true
+    description: 'The Slack message to send'
+  webhook_url:
+    required: true
+    description: 'Slack webhook URL to send message.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'mail'
+  color: 'green'

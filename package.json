@@ -1,0 +1,35 @@
+{
+  "name": "action-slack-notify",
+  "version": "1.0.0",
+  "description": "A GitHub action to send a Slack message",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "pack": "ncc build src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssethu24/action-slack-notify.git"
+  },
+  "keywords": [
+    "Actions",
+    "node"
+  ],
+  "author": "ssethu24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssethu24/action-slack-notify.git"
+  },
+  "homepage": "https://github.com/ssethu24/action-slack-notify.git",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.47",
+    "@types/node-fetch": "^2.5.9",
+    "@zeit/ncc": "^0.22.3",
+    "typescript": "^3.9.5"
+  }
+}
